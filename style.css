@@ -8,13 +8,15 @@ body {
     background-size: cover; /* Escala a imagem para cobrir todo o elemento */
     background-repeat: no-repeat; /* Impede que a imagem se repita */
      background-position: center center; /* Centraliza a imagem */
+     background-attachment: fixed;
      display: flex; /* Usa Flexbox para layout */
      flex-direction: column; /* Alinha os itens na vertical */
      align-items: center; /* Centraliza os itens horizontalmente */
-     justify-content: center; /* Centraliza os itens verticalmente */
+     justify-content: flex-start; /* Alinha o conteúdo no topo da página */
      height: 100vh; /* Preenche a altura total da viewport */
      margin: 0;
      padding: 0;
+     min-height: 100vh; /* Para garantir que o rodapé não sobreponha o conteúdo */
  }
  
  
@@ -57,56 +59,69 @@ body {
      cursor: pointer; /* Muda o cursor para indicar que Ã© clicÃ¡vel */
  }
  
- /* Estiliza a caixa de resultados da pesquisa */
+ /* Altere esta parte do código */
  .resultados-pesquisa {
-     width: 60rem; /* Largura mÃ¡xima da caixa de resultados */
-     height: 46vh; /* Altura mÃ¡xima da caixa de resultados */
-     overflow-y: auto; /* Adiciona rolagem vertical se necessÃ¡rio */
-     margin-top: 1rem; /* EspaÃ§amento acima da caixa de resultados */
-     padding: 1rem; /* EspaÃ§amento interno */
-     border-radius: 0.6rem; /* Borda arredondada */
- }
- 
- /* Estiliza cada item de resultado */
- .item-resultado {
-     background: #FFFFFF; /* Cor de fundo dos itens */
-     border-radius: 0.6rem; /* Borda arredondada */
-     padding: 1rem; /* EspaÃ§amento interno */
-     margin-bottom: 1rem; /* EspaÃ§amento abaixo dos itens */
-     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
- }
- 
- /* Estiliza os tÃ­tulos dentro dos itens de resultado */
- .item-resultado h2 {
-     font-size: 1.5rem; /* Tamanho da fonte */
-     color: #ffffff; /* Cor do texto */
- }
- 
- /* Estiliza os links dentro dos itens de resultado */
- .item-resultado a {
-     text-decoration: none; /* Remove o sublinhado padrÃ£o dos links */
-     color: #30475E; /* Cor do texto dos links */
- }
- 
- /* Estiliza os links quando sÃ£o passados o mouse sobre */
- .item-resultado a:hover {
-     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
- }
- 
- /* Estiliza a descriÃ§Ã£o meta dentro dos itens de resultado */
- .descricao-meta {
-     color: #45474B; /* Cor do texto */
-     margin: 0.5rem 0; /* Margem acima e abaixo */
- }
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    width: 100%; /* Ocupar 100% da largura disponível */
+    max-width: 1200px;
+    margin: 0 auto; /* Centralizar o grid */
+    justify-items: center; /* Centralizar itens horizontalmente */
+}
+
+.item-resultado {
+    background: #FFFFFF;
+    border-radius: 0.6rem;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%; /* Garante que o item ocupe a largura total da coluna */
+    max-width: 350px; /* Limite de largura para evitar itens muito largos */
+    box-sizing: border-box; /* Garantir que padding e borda sejam inclusos na largura */
+}
+
+.item-resultado img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.6rem 0.6rem 0 0;
+}
+
+.item-resultado h2 {
+    font-size: 1.5rem;
+    color: #30475E;
+    margin-top: 0.5rem;
+}
+
+.item-resultado p {
+    color: #45474B;
+    margin: 0.5rem 0;
+}
+
+.item-resultado a {
+    text-decoration: none;
+    color: #30475E;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
  
  /* Estiliza o rodapÃ© da pÃ¡gina */
  footer {
-     background-color: #090d2e; /* Cor de fundo do rodapÃ© */
-     color: #45474B; /* Cor do texto */
-     text-align: center; /* Alinha o texto ao centro */
-     padding: 0; /* EspaÃ§amento interno */
-     width: 100%; /* Largura total da pÃ¡gina */
-     position: absolute; /* Posiciona o rodapÃ© */
-     bottom: 0; /* Alinha ao fundo da pÃ¡gina */
-     font-size: 1rem; /* Tamanho da fonte */
+    background-color: #090d2e;
+    color: #45474B;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+
  }
+
+
+Mostrar rascunhos
+
+
+

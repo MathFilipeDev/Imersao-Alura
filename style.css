@@ -26,6 +26,7 @@ body {
      color: #ffffff; /* Cor do texto */
      text-align: center; /* Alinha o texto ao centro */
      letter-spacing: 0.4rem; /* EspaÃ§amento entre letras */
+     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9); /* Sombra do texto */
  }
  
  /* Estiliza as seÃ§Ãµes da pÃ¡gina */
@@ -53,7 +54,7 @@ body {
      padding: 0.8rem 1.2rem; /* EspaÃ§amento interno do botÃ£o */
      border: none; /* Remove a borda padrÃ£o */
      border-radius: 1.5rem; /* Borda arredondada */
-     background-color: #30475E; /* Cor de fundo do botÃ£o */
+     background-color: #000000; /* Cor de fundo do botÃ£o */
      color: #F5F7F8; /* Cor do texto do botÃ£o */
      font-size: 1rem; /* Tamanho da fonte */
      cursor: pointer; /* Muda o cursor para indicar que Ã© clicÃ¡vel */
@@ -71,7 +72,7 @@ body {
 }
 
 .item-resultado {
-    background: #FFFFFF;
+    background: rgba(255, 255, 255, 0.8); /* Branco com 80% de opacidade */
     border-radius: 0.6rem;
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -92,7 +93,7 @@ body {
 
 .item-resultado h2 {
     font-size: 1.5rem;
-    color: #30475E;
+    color: #09338d;
     margin-top: 0.5rem;
 }
 

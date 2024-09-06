@@ -62,7 +62,7 @@ body {
  /* Altere esta parte do código */
  .resultados-pesquisa {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajusta o grid dinamicamente */
     gap: 1rem;
     width: 100%; /* Ocupar 100% da largura disponível */
     max-width: 1200px;
@@ -111,7 +111,7 @@ body {
  /* Estiliza o rodapÃ© da pÃ¡gina */
  footer {
     background-color: #090d2e;
-    color: #45474B;
+    color: #ffffff;
     text-align: center;
     padding: 1rem;
     width: 100%;
@@ -119,9 +119,3 @@ body {
     bottom: 0;
 
  }
-
-
-Mostrar rascunhos
-
-
-

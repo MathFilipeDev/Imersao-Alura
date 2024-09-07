@@ -1,6 +1,56 @@
 /* Importa a fonte Chakra Petch do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    z-index: 10;
+}
+
+nav {
+    width: 100%;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end; /* Links no canto direito */
+    position: absolute;
+    right: 0; /* Fixa os links no canto direito */
+    top: 130%;
+    transform: translateY(-50%); /* Centraliza verticalmente os links */
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    color: yellow; /* Muda a cor do texto para amarelo ao passar o mouse */
+}
+
+nav a img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza o logo */
+    max-width: 150px; /* Tamanho do logo */
+    height: auto;
+    top:130%;
+    transform: translate(-50%, -50%); /* Centraliza o logo verticalmente também */
+}
 /* Estiliza o corpo da página */
 body {
     font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
@@ -21,12 +71,12 @@ body {
 
  main {
     flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; 
- /* Centraliza verticalmente */
-  align-items: center;
- }
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    padding-top: 80px; /* Espaço suficiente para evitar sobreposição com o cabeçalho */
+}
 
  /* Estiliza os tÃ­tulos h1 */
  h1 {
@@ -62,7 +112,7 @@ body {
      padding: 0.8rem 1.2rem; /* EspaÃ§amento interno do botÃ£o */
      border: none; /* Remove a borda padrÃ£o */
      border-radius: 1.5rem; /* Borda arredondada */
-     background-color: #000000; /* Cor de fundo do botÃ£o */
+     background-color: #0f154d; /* Cor de fundo do botÃ£o */
      color: #F5F7F8; /* Cor do texto do botÃ£o */
      font-size: 1rem; /* Tamanho da fonte */
      cursor: pointer; /* Muda o cursor para indicar que Ã© clicÃ¡vel */

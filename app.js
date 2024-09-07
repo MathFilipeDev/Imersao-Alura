@@ -4,9 +4,9 @@ function pesquisar() {
 let campoPesquisa = document.getElementById("campo-pesquisa").value
 
 // se campoPesquisa for uma string sem nada
-if (campoPesquisa == "") {
-    section.innerHTML = "<p>Nada foi encontrado</p>" 
-    return
+if (!campoPesquisa) {
+    section.innerHTML = "<p style='color: yellow;'>Nada foi encontrado. Escreva o nome de um jogo</p>"; 
+    return;
 }
 
 campoPesquisa = campoPesquisa.toLowerCase()
@@ -16,11 +16,13 @@ console.log(campoPesquisa);
 let resultados = "";
 let titulo = "";
 let descricao = "";
+let tags = "";
 
 for (let dado of dados) {
     titulo = dado.titulo.toLowerCase()
     descricao = dado.descricao.toLowerCase()
-    if (titulo.includes(campoPesquisa) || descricao.includes(campoPesquisa)) {
+    tags = dado.tags.toLowerCase()
+    if (titulo.includes(campoPesquisa) || descricao.includes(campoPesquisa) || tags.includes(campoPesquisa)) {
 
         resultados += `
             <div class="item-resultado">
@@ -32,6 +34,10 @@ for (let dado of dados) {
 `
     }
 
+}
+
+if (!resultados) {
+    resultados = "<p style='color: yellow;'>Nada foi encontrado</p>"
 }
 
 section.innerHTML = resultados

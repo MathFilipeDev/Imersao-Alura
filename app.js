@@ -5,7 +5,7 @@ let campoPesquisa = document.getElementById("campo-pesquisa").value
 
 // se campoPesquisa for uma string sem nada
 if (!campoPesquisa) {
-    section.innerHTML = "<p style='color: yellow;'>Nada foi encontrado. Escreva o nome de um jogo</p>"; 
+    section.innerHTML = "<p style='color: yellow;'>Nada foi encontrado. Escreva o nome de um jogo, gênero ou todos para acessar todo os jogos</p>"; 
     return;
 }
 
@@ -55,4 +55,18 @@ let tags = "";
     }
 
     section.innerHTML = resultados;
+
+    function ajustarEspacoRodape() {
+        const mainElement = document.querySelector('main');
+        const rodape = document.querySelector('footer');
+        const alturaRodape = rodape.offsetHeight;
+    
+        // Adiciona o padding ao main para garantir que o conteúdo não seja coberto
+        mainElement.style.paddingBottom = alturaRodape + 300 + 'px';
+    }
+    
+    // Chame essa função após o conteúdo ser carregado dinamicamente
+    ajustarEspacoRodape();
+    
+    
 }

@@ -57,17 +57,17 @@ body {
     background-image: url('img/fundo-desktop.jpg');
     background-size: cover; /* Escala a imagem para cobrir todo o elemento */
     background-repeat: no-repeat; /* Impede que a imagem se repita */
-     background-position: center center; /* Centraliza a imagem */
-     background-attachment: fixed;
-     display: flex; /* Usa Flexbox para layout */
-     flex-direction: column; /* Alinha os itens na vertical */
-     align-items: center; /* Centraliza os itens horizontalmente */
-     justify-content: flex-start; /* Alinha o conteúdo no topo da página */
-     height: 100vh; /* Preenche a altura total da viewport */
-     margin: 0;
-     padding: 0;
-     min-height: 100vh; /* Para garantir que o rodapé não sobreponha o conteúdo */
- }
+    background-position: center center; /* Centraliza a imagem */
+    background-attachment: fixed;
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: flex-start; /* Alinha o conteúdo no topo da página */
+    height: 100vh; /* Preenche a altura total da viewport */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Para garantir que o rodapé não sobreponha o conteúdo */
+}
 
  main {
     flex: 1;
@@ -172,9 +172,109 @@ body {
     background-color: #090d2e;
     color: #ffffff;
     text-align: center;
-    padding: 1rem;
+    padding: 0;
     width: 100%;
-    position: sticky;
-    bottom: 0;
+    position: fixed; /* Posiciona o rodapé */
+    bottom: 0; /* Alinha ao fundo da página */
+    font-size: 1rem; /* Tamanho da fonte */
+}
 
- }
+ @media (max-width: 768px) {
+    
+    /* Reseta margens e espaçamentos */
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh; /* Garante que o body ocupe toda a altura da tela */
+    }
+
+    main {
+        flex: 1;
+    }
+
+
+    /* Ajuste do layout para 1 coluna e várias linhas no mobile */
+    #resultados-pesquisa {
+        display: grid;
+        grid-template-columns: 1fr; /* 1 coluna para dispositivos móveis */
+        gap: 1rem; /* Espaçamento entre os itens */
+    }
+
+    .item-resultado {
+        background-color: #f0f0f0;
+        padding: 1rem;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item-resultado img {
+        width: 100%; /* Imagem ocupa toda a largura do item */
+        max-width: 200px;
+        height: auto;
+    }
+
+    .item-resultado h2 {
+        font-size: 1.5rem;
+        margin: 0.5rem 0;
+    }
+
+    .item-resultado p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .item-resultado a {
+        margin-top: 0.5rem;
+        font-size: 1rem;
+        color: #007bff;
+        text-decoration: none;
+    }
+
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+
+    nav a img {
+        left: 0; /* Move o logo para o canto esquerdo */
+        transform: none; /* Remove a centralização via transform */
+        top: 130%; /* Ajuste a posição vertical */
+        transform: translateY(-50%); /* Centraliza o logo verticalmente */
+    }
+
+    body {
+        background-image: url('img/fundo\ vertical.jpg'); /* Fundo para dispositivos móveis */
+        background-size: cover;
+        background-position: center;
+    }
+
+    h1 {
+        font-size: 1.8rem; /* Tamanho da fonte em telas pequenas */
+        letter-spacing: 0.1rem; /* Espaçamento entre letras em telas pequenas */
+    }
+
+    section input {
+        width: 17rem; /* Largura total dos inputs em telas pequenas */
+    }
+
+    section button {
+        padding: 0.6rem 1rem; /* Espaçamento interno do botão em telas pequenas */
+        font-size: 0.9rem; /* Tamanho da fonte do botão em telas pequenas */
+    }
+
+    .resultados-pesquisa {
+        width: 90%; /* Largura da caixa de resultados em telas pequenas */
+        height: 50vh; /* Altura da caixa de resultados em telas pequenas */
+    }
+
+    .item-resultado h2 {
+        font-size: 1.1rem; /* Tamanho da fonte dos títulos em telas pequenas */
+    }
+
+    footer {
+        font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
+    }
+}

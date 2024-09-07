@@ -61,5 +61,26 @@ let dados = [
         img: "img/resident-evil2.jpg",
         link: "https://en.wikipedia.org/wiki/Resident_Evil_2",
         tags: "sobrevivência zumbis leon umbrella"
+      },
+      {
+        titulo: "NBA Jam",
+        descricao: "Um dos jogos de basquete mais icônicos da história, conhecido por sua jogabilidade frenética, dunks espetaculares e comentários engraçados.",
+        img: "img/nba.jpg",
+        link: "https://pt.wikipedia.org/wiki/NBA_Jam",
+        tags: "esporte basquete jogo competição"
+      },
+      {
+        titulo: "Need for Speed II",
+        descricao: "Um dos primeiros jogos da popular franquia Need for Speed, oferecendo corridas emocionantes em cidades e paisagens vibrantes.",
+        img: "img/nfs2.jpg",
+        link: "https://pt.wikipedia.org/wiki/Need_for_Speed_II",
+        tags: "corrida carros esporte turbo"
+      },
+      {
+        titulo: "StarCraft",
+        descricao: "Um dos RTS (Real-Time Strategy) mais influentes de todos os tempos, com três raças distintas e batalhas épicas.",
+        img: "img/starcraft.jpg",
+        link: "https://pt.wikipedia.org/wiki/StarCraft",
+        tags: "estratégia rts batalhas épicas"
       }
     ];

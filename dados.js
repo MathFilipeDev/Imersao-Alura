@@ -2,7 +2,7 @@ let dados = [
     {
         titulo: "Super Mario Bros",
         descricao: "Um dos jogos mais icônicos de todos os tempos e introduziu personagens inesquecíveis como Mario e Luigi.",
-        img: "img/mario.jpg", // Certifique-se que o caminho esteja correto
+        img: "img/mario.jpg",
         link: "https://pt.wikipedia.org/wiki/Super_Mario_Bros",
         tags: "mario cano arcade luide"
       },
@@ -64,14 +64,14 @@ let dados = [
       },
       {
         titulo: "NBA Jam",
-        descricao: "Um dos jogos de basquete mais icônicos da história, conhecido por sua jogabilidade frenética, dunks espetaculares e comentários engraçados.",
+        descricao: "Um dos jogos de basquete mais icônicos da história, conhecido por sua jogabilidade frenética e comentários engraçados.",
         img: "img/nba.jpg",
         link: "https://pt.wikipedia.org/wiki/NBA_Jam",
         tags: "esporte basquete jogo competição"
       },
       {
         titulo: "Need for Speed II",
-        descricao: "Um dos primeiros jogos da popular franquia Need for Speed, oferecendo corridas emocionantes em cidades e paisagens vibrantes.",
+        descricao: "Um dos primeiros jogos da popular franquia Need for Speed, oferecendo ação e corridas emocionantes.",
         img: "img/nfs2.jpg",
         link: "https://pt.wikipedia.org/wiki/Need_for_Speed_II",
         tags: "corrida carros esporte turbo"
@@ -82,5 +82,26 @@ let dados = [
         img: "img/starcraft.jpg",
         link: "https://pt.wikipedia.org/wiki/StarCraft",
         tags: "estratégia rts batalhas épicas"
+      },
+      {
+        titulo: "Counter-Strike",
+        descricao: "Jogo de tiro tático em equipe, onde os jogadores são divididos em duas equipes: Terroristas e Contra-Terroristas.",
+        img: "img/cs.jpg",
+        link: "https://pt.wikipedia.org/wiki/Counter-Strike",
+        tags: "tiro fps competição arma"
+      },
+      {
+        titulo: "FIFA 98",
+        descricao: "Considerado como um dos melhores FIFA's de todos os tempos, trouxe gráficos e jogabilidade inovadores para a época.",
+        img: "img/fifa.jpg",
+        link: "https://pt.wikipedia.org/wiki/FIFA:_Road_to_World_Cup_98",
+        tags: "futebol esporte competição bola"
+      },
+      {
+        titulo: "Silent Hill",
+        descricao: "Essa série, criada pela Konami, é conhecida por sua atmosfera opressiva, narrativa envolvente e monstros memoráveis.",
+        img: "img/silent-hill.jpg",
+        link: "https://pt.wikipedia.org/wiki/Silent_Hill_(jogo_eletrônico)",
+        tags: "sobrevivência terror medo susto"
       }
     ];

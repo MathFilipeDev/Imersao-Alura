@@ -182,9 +182,11 @@ body {
     /* Reseta margens e espaçamentos */
 
     body {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh; /* Garante que o body ocupe toda a altura da tela */
+        background-image: url('img/fundo-desktop.jpg');
+        background-size: cover; /* Escala a imagem para cobrir todo o elemento */
+        background-repeat: no-repeat; /* Impede que a imagem se repita */
+        background-position: center center; /* Centraliza a imagem */
+        background-attachment: fixed;
     }
 
     main {

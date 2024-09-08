@@ -183,7 +183,6 @@ body {
 
     body {
         background-image: url('img/fundo-desktop.jpg');
-        background-size: cover; /* Escala a imagem para cobrir todo o elemento */
         background-repeat: no-repeat; /* Impede que a imagem se repita */
         background-position: center center; /* Centraliza a imagem */
         background-attachment: fixed;

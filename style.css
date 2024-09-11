@@ -193,13 +193,16 @@ section button {
 }
 
 @media (max-width: 768px) {
-    /* Reseta margens e espaçamentos */
+    /* Aplica o fundo fixo diretamente no HTML */
+    html {
+        background: url('img/fundo-desktop.jpg') center center / cover no-repeat fixed;
+        height: 100%;
+    }
+
     body {
-        background-image: url('img/fundo-desktop.jpg');
-        background-size: cover; /* Escala a imagem para cobrir todo o elemento */
-        background-repeat: no-repeat; /* Impede que a imagem se repita */
-        background-position: center center; /* Centraliza a imagem */
-        background-attachment: scroll;
+        background: none; /* Remove qualquer fundo do body */
+        min-height: 100vh;
+        overflow-y: auto; /* Garante que o conteúdo role */
     }
 
     main {
@@ -225,6 +228,7 @@ section button {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-bottom: 20%;
     }
 
     .item-resultado img {
@@ -274,16 +278,15 @@ section button {
 
 /* Responsividade para celulares muito pequenos */
 @media (max-width: 480px) {
-    nav a img {
-        left: 0; /* Move o logo para o canto esquerdo */
-        transform: none; /* Remove a centralização via transform */
-        top: auto; /* Remove qualquer ajuste vertical anterior */
+    html {
+        background: url('img/fundo\ vertical.jpg') center center / cover no-repeat fixed;
+        height: 100%;
     }
 
     body {
-        background-image: url('img/fundo\ vertical.jpg'); /* Fundo para dispositivos móveis */
-        background-size: cover;
-        background-position: center;
+        background: none; /* Remove o fundo do body */
+        min-height: 100vh;
+        overflow-y: auto; /* Faz o conteúdo rolar */
     }
 
     h1 {
@@ -301,8 +304,9 @@ section button {
         font-size: 0.9rem; /* Tamanho da fonte reduzido para telas muito pequenas */
     }
 
+    
     .resultados-pesquisa {
-        width: 90%; /* Largura da caixa de resultados em telas pequenas */
+        width: 70%; /* Largura da caixa de resultados em telas pequenas */
         height: 50vh; /* Altura da caixa de resultados em telas pequenas */
     }
 

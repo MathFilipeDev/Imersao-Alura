@@ -197,6 +197,7 @@ section button {
     html {
         background: url('img/fundo-desktop.jpg') center center / cover no-repeat fixed;
         height: 100%;
+        background-attachment: fixed;
     }
 
     body {
@@ -281,6 +282,7 @@ section button {
     html {
         background: url('img/fundo\ vertical.jpg') center center / cover no-repeat fixed;
         height: 100%;
+        background-attachment: fixed;
     }
 
     body {

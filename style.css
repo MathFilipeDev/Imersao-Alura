@@ -120,16 +120,16 @@ body {
  }
  
  /* Estiliza os botÃµes dentro das seÃ§Ãµes */
- section button {
+section button {
     width: 30rem;
-     padding: 0.8rem 1.2rem; /* EspaÃ§amento interno do botÃ£o */
-     border: none; /* Remove a borda padrÃ£o */
-     border-radius: 1.5rem; /* Borda arredondada */
-     background-color: #0f154d; /* Cor de fundo do botÃ£o */
-     color: #F5F7F8; /* Cor do texto do botÃ£o */
-     font-size: 1rem; /* Tamanho da fonte */
-     cursor: pointer; /* Muda o cursor para indicar que Ã© clicÃ¡vel */
- }
+    padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 1.5rem; /* Borda arredondada */
+    background-color: #0f154d; /* Cor de fundo do botão */
+    color: #F5F7F8; /* Cor do texto do botão */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
  
  /* Altere esta parte do código */
  .resultados-pesquisa {
@@ -192,10 +192,8 @@ body {
     font-size: 1rem; /* Tamanho da fonte */
 }
 
- @media (max-width: 768px) {
-    
+@media (max-width: 768px) {
     /* Reseta margens e espaçamentos */
-
     body {
         background-image: url('img/fundo-desktop.jpg');
         background-size: cover; /* Escala a imagem para cobrir todo o elemento */
@@ -207,7 +205,6 @@ body {
     main {
         flex: 1;
     }
-
 
     /* Ajuste do layout para 1 coluna e várias linhas no mobile */
     #resultados-pesquisa {
@@ -248,16 +245,34 @@ body {
         text-decoration: none;
     }
 
+    section button {
+        width: 100%; /* Garante que o botão ocupe toda a largura disponível */
+        padding: 0.8rem; /* Ajuste o padding conforme necessário */
+        font-size: 0.9rem; /* Tamanho da fonte reduzido para telas muito pequenas */
+    }
+
+    /* Ajustes específicos para a versão móvel */
+    nav {
+        flex-direction: column; /* Alinha os itens verticalmente */
+        align-items: flex-start; /* Alinha os itens à esquerda */
+    }
+
+    .image-container {
+        margin-top: 10px; /* Adiciona margem superior para separar os ícones da rede social do logo */
+        margin-left: auto; /* Alinha os ícones das redes sociais à direita */
+    }
+
+    .logo {
+        margin-right: auto; /* Alinha o logo à esquerda */
+    }
 }
 
-/* Responsividade para celulares */
+/* Responsividade para celulares muito pequenos */
 @media (max-width: 480px) {
-
     nav a img {
         left: 0; /* Move o logo para o canto esquerdo */
         transform: none; /* Remove a centralização via transform */
-        top: 130%; /* Ajuste a posição vertical */
-        transform: translateY(-50%); /* Centraliza o logo verticalmente */
+        top: auto; /* Remove qualquer ajuste vertical anterior */
     }
 
     body {
@@ -276,8 +291,9 @@ body {
     }
 
     section button {
-        padding: 0.6rem 1rem; /* Espaçamento interno do botão em telas pequenas */
-        font-size: 0.9rem; /* Tamanho da fonte do botão em telas pequenas */
+        width: 100%; /* Garante que o botão ocupe toda a largura disponível */
+        padding: 0.8rem; /* Ajuste o padding conforme necessário */
+        font-size: 0.9rem; /* Tamanho da fonte reduzido para telas muito pequenas */
     }
 
     .resultados-pesquisa {

@@ -121,6 +121,7 @@ body {
  
  /* Estiliza os botÃµes dentro das seÃ§Ãµes */
  section button {
+    width: 30rem;
      padding: 0.8rem 1.2rem; /* EspaÃ§amento interno do botÃ£o */
      border: none; /* Remove a borda padrÃ£o */
      border-radius: 1.5rem; /* Borda arredondada */

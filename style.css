@@ -257,6 +257,7 @@ section button {
 
     section button {
         width: 100%; /* Garante que o botão ocupe toda a largura disponível */
+        background-color: #f1278b;
         padding: 0.8rem; /* Ajuste o padding conforme necessário */
         font-size: 0.9rem; /* Tamanho da fonte reduzido para telas muito pequenas */
     }

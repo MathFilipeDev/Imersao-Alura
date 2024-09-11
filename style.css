@@ -6,49 +6,51 @@ header {
     top: 0;
     width: 100%;
     padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: transparent;
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center;
     z-index: 10;
+    /* Adiciona um fundo para melhor visualização, remova se desnecessário */
+    /* background-color: rgba(0, 0, 0, 0.5); */
 }
 
+/* Estiliza o contêiner da navegação */
 nav {
+    display: flex;
+    align-items: center;
     width: 100%;
+    max-width: 1200px; /* Limita a largura máxima */
     position: relative;
 }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 20px;
-    justify-content: flex-end; /* Links no canto direito */
-    position: absolute;
-    right: 0; /* Fixa os links no canto direito */
-    top: 130%;
-    transform: translateY(-50%); /* Centraliza verticalmente os links */
+/* Estiliza o logo do site */
+.logo {
+    flex: 1;
+    text-align: center; /* Centraliza o logo */
 }
 
-nav a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 16px;
-    padding: 5px 10px;
-}
-
-
-
-nav a img {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%); /* Centraliza o logo */
-    max-width: 150px; /* Tamanho do logo */
+.logo img {
+    max-width: 150px; /* Ajuste conforme necessário */
     height: auto;
-    top:130%;
-    transform: translate(-50%, -50%); /* Centraliza o logo verticalmente também */
 }
+
+/* Estiliza o contêiner das imagens de redes sociais */
+.image-container {
+    display: flex; /* Alinha os ícones em linha */
+    gap: 20px; /* Espaço entre os ícones */
+    position: absolute; /* Posiciona o contêiner relativo ao pai */
+    right: 0; /* Alinha à direita */
+}
+
+/* Estiliza as imagens dentro do contêiner */
+.image-container a img {
+    display: block; /* Remove o espaçamento abaixo das imagens */
+    width: 30px; /* Define a largura das imagens */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+
 /* Estiliza o corpo da página */
 body {
     font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */

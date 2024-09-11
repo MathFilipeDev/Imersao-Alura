@@ -9,10 +9,14 @@
 <body>
     <header>
         <nav>
-            <a href="index.html">
+            <a href="index.html" class="logo">
                 <img src="img/logo.png" alt="Logo Gigantes dos Games">
             </a>
-        </nav>     
+            <div class="image-container">
+                <a href="sobre.html"><img src="img/git.png" width="30" alt="GitHub"></a>
+                <a href="contato.html"><img src="img/LinkdIn.png" width="30" alt="LinkedIn"></a>
+            </div>
+        </nav>       
     </header>
     <main>
         <h1>Qual clássico você deseja reviver?</h1>
@@ -20,9 +24,8 @@
             <input type="text" placeholder="Digite o nome do jogo, gênero ou todos" id="campo-pesquisa">
             <button onclick="pesquisar()">Pesquisar</button>
         </section>
-        <section class="resultados-pesquisa"
-        id="resultados-pesquisa">
-
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
+            <!-- Conteúdo dinâmico -->
         </section>
     </main>
     <footer>

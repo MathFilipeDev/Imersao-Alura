@@ -51,7 +51,7 @@ nav {
 
 /* Altera a cor das imagens para amarelo ao passar o mouse */
 .image-container a:hover img {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(1000%) hue-rotate(40deg) brightness(95%);
+    filter: brightness(0) invert(1) sepia(1) saturate(50) hue-rotate(-10deg);
 }
 
 /* Estiliza as imagens dentro do contêiner */
@@ -60,6 +60,8 @@ nav {
     width: 30px;
     height: auto;
 }
+
+
 
 /* Estiliza o corpo da página */
 body {

@@ -206,6 +206,11 @@ section button {
         flex: 1;
     }
 
+    h1 {
+        margin: 0 1rem 1.5rem; /* Adiciona margem inferior menor em telas pequenas */
+        font-size: 1.8rem; /* Ajuste o tamanho da fonte conforme necessário */
+    }
+
     /* Ajuste do layout para 1 coluna e várias linhas no mobile */
     #resultados-pesquisa {
         display: grid;

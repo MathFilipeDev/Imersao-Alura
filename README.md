@@ -31,3 +31,6 @@ Este projeto está licenciado sob a MIT License.
 ###    Agradecimentos:
 
 Agradeço à Alura pela oportunidade de aprender e desenvolver este projeto.
+
+### 👾 Confira o projeto:
+🔗 Vercel - https://gigantesdosgames.vercel.app
